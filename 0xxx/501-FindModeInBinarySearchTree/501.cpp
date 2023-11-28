@@ -30,19 +30,19 @@ public:
         } else if (currCount > maxCount)
             ans = {currNum};
     }
-    vector<int> findMode(TreeNode *root) {
-        unordered_map<int, int> counter;
-        int maxCount = 0;
-        dfs(root, counter, maxCount);
+    // vector<int> findMode(TreeNode *root) {
+    //     unordered_map<int, int> counter;
+    //     int maxCount = 0;
+    //     dfs(root, counter, maxCount);
 
-        vector<int> ans;
-        for (int i = -100000; i <= 100000; i++) {
-            if (counter[i] == maxCount)
-                ans.push_back(i);
-        }
+    //     vector<int> ans;
+    //     for (int i = -100000; i <= 100000; i++) {
+    //         if (counter[i] == maxCount)
+    //             ans.push_back(i);
+    //     }
 
-        return ans;
-    }
+    //     return ans;
+    // }
 };
 
 int main() {
